@@ -1,0 +1,437 @@
+* {
+        font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+        height: 100%;
+        min-width: 1350px;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+}
+
+html {
+        background-color: #EC2D01;
+        background-attachment: fixed;
+        background-image: url(../img/cross.png);
+}
+
+a {
+        text-decoration: none;
+        color: inherit;
+}
+
+
+/* -------HEADER-------*/
+.black_square {
+        float: left;
+        height: 70px;
+        width: 100%;
+}
+
+ul.nav {
+        padding: 0;
+        height: 70px;
+        margin-top: 0;
+        font-size: 20px;
+        width: 1000px;
+        list-style-type: none;
+}
+
+ul.nav li {
+        /* margin-top: 0; */
+        /* position: relative; */
+        color: black;
+        float: left;
+        padding: 0;
+        /* padding-top: 20px; */
+        line-height: 20px;
+        width: 168px;
+        height: 67px;
+        text-align: center;
+}
+
+ul.nav li:hover {
+        background-color: rgb(185, 150, 150);
+        cursor: pointer;
+        border-bottom-style: solid;
+        border-color: #FCDD76;
+}
+
+.nav a {
+        /* top: 50%; */
+        /* position: absolute; */
+        color: #A4654A;
+        display: block;
+        height: 100%;
+        width: 100%;
+}
+
+.header_div {
+        background-color: rgb(253, 244, 227);
+        width: 100%;
+        height: 70px;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+        z-index: 1;
+}
+
+.heading {
+        width: 840px;
+        /* display: flex; */
+        height: 70px;
+        font-size: 80px;
+        padding-top: 0px;
+        top: 0;
+        /* position: fixed; */
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.logo {
+        float: left;
+        padding-left: 40px;
+        width: 50px;
+        height: 50px;
+	top: 20px;
+        align-items: center;
+        font-size: 0px;
+        /* overflow:hidden; */
+}
+/*--------------------*/
+
+
+/* -----------MAIN_LOGO_DIV---------- */
+.contacts {
+        line-height: 30px;
+        align-items: center;
+        float: right;
+        padding: 20px;
+        height: 60px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        font-size: 20px;
+        /* text-align: center; */
+}
+
+.main_div {
+        /* background-color: rgba(100, 0, 0, 0.5); */
+        height: 350px;
+        /* min-height: 700px; */
+        width: 100%;
+
+        float: none;
+        overflow: auto;
+}
+
+.main_name {
+        text-align: center;
+        font-size: 100px;
+        color: white;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.additional {
+        font-size: 40px;
+        font-family: 'Poiret One', cursive;
+        width: 720px;
+        color: white;
+        text-align: center;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+}
+/* -------------------- */
+
+
+/* ----CHOISE_BLOCK---- */
+ul.choise {
+        margin: 0;
+        list-style-type: none;
+        font-size: 40px;
+        text-align: center;
+}
+
+ul.choise li {
+        padding-top: 25px;
+        height: 80px;
+        background-color: white;
+        border: solid;
+        border-collapse: collapse;
+        border-color: white;
+}
+
+ul.choise li:hover {
+        padding-top: 25px;
+        height: 80px;
+        background-color: white;
+        border-right: solid;
+        border-right-color: #EC2D01;
+        border-right-width: 5px;
+        padding-left: 2px;
+}
+
+ul.choise li.active {
+        padding-top: 25px;
+        height: 80px;
+        background-color: white;
+        border-right: solid;
+        border-right-color: #EC2D01;
+        border-right-width: 5px;
+        padding-left: 2px;
+}
+
+ul.choise li:enabled {
+        padding-top: 25px;
+        height: 80px;
+        background-color: white;
+        border: solid;
+        border-right-color: #EC2D01;
+        border-right-width: 5px;
+}
+
+.choise a {
+        display: block;
+        height: 100%;
+        width: 100%;
+}
+
+.car_chooser {
+        float: left;
+        height: 555px;
+        width: 100%;
+        background-color: #FDF4E3;
+        /* border-bottom-color: #FCDD76; */
+        /* border-bottom: solid; */
+}
+
+.height_choice {
+        margin-left: 10%;
+        float: left;
+        width: 30%;
+}
+
+.auto_info {
+        float: left;
+        width: 50%;
+        height: 555px;
+}
+
+.info_pic {
+        float: right;
+        margin-top: 123px;
+}
+/* -------------------- */
+
+
+/*------COMPANY_INFO-------*/
+.comp_info {
+        /* height: 2000px; */
+        background-color: white;
+        /* background-image: url(../img/cross.png); */
+}
+
+.zag {
+        color: #EC2D01;
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
+}
+
+.obertka {
+        font-size: 20px;
+        width: 70%;
+        margin-left: 15%;
+}
+
+.description {
+        float: left;
+        width: 40%;
+}
+
+.profile {
+        margin-left: 10%;
+        width: 50%;
+        float: left;
+}
+/*-------------------------*/
+
+/*-----------MAP-----------*/
+.map {
+        width: 100%;
+        text-align: center;
+}
+/*-------------------------*/
+
+/*-------price_list--------*/
+tr, td {
+    padding: 15px;
+}
+
+.prices {
+        position: relative;
+        float: left;
+        width: 500px;
+        padding: 50px 0 100px 15%;
+        font-size: 20px;
+}
+
+table {
+        margin-top: 0;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+}
+
+.some_shit {
+        width: 100%;
+        background-color: white;
+        height: 610px;
+        background-image: url(../img/cross_2.png);
+}
+/*-------------------------*/
+
+/*---------footer----------*/
+.footer {
+        width: 100%;
+        height: 70px;
+        float: left;
+        background-color: white;
+}
+
+ul.footer_nav {
+        margin: 0;
+        padding: 0;
+        height: 70px;
+        margin-top: 0;
+        font-size: 15px;
+        width: 1300px;
+        list-style-type: none;
+        margin-left: 20px;
+}
+
+ul.footer_nav li {
+        color: black;
+        float: left;
+        padding: 0;
+        line-height: 13px;
+        width: 200px;
+        text-align: center;
+        height: 70px;
+}
+
+.footer_nav a {
+        display: block;
+        height: 100%;
+        width: 100%;
+}
+/*-------------------------*/
+
+.form-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(251, 251, 251, 0.2);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.contact-form {
+    box-sizing: border-box;
+    width: 400px;
+    background: #fff;
+    padding: 0 30px 30px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+}
+
+.contact-form__title {
+    box-sizing: border-box;
+    margin: 0 -30px 30px;
+    padding: 15px 30px;
+    width: calc(100% + 60px);
+    line-height: 1.5;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    background: url('../img/bg.png') top left repeat,
+        #4a90e8;
+    color: #fff;
+}
+
+.contact-form__description {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-form__input-wrapper {
+    margin-bottom: 20px;
+}
+
+.contact-form__input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #e2e2e2;
+    background: #fbfbfb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form__error {
+    font-size: .875rem;
+}
+
+.contact-form__button {
+    background: #FF0700;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 240px;
+    margin: 30px auto 0;
+    border-radius: 5px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+    padding: 2px 0 0 0;
+}
+
+.contact-form__button:hover {
+    transition: .3s;
+    background: #FF4540;
+}
+
+@media (max-width: 480px) {
+    .form-wrapper {
+        padding: 15px;
+    }
+    .contact-form {
+        padding: 0 15px 15px;
+    }
+    .contact-form__title {
+        margin: 0 -15px 30px;
+        padding: 15px 30px;
+        width: calc(100% + 30px);
+        font-size: 18px;
+    }
+}

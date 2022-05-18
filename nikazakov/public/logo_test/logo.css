@@ -1,0 +1,87 @@
+@keyframes test {
+        0%{
+                border-radius: 0 0 0 0;
+                transform: rotate(0deg);
+        }
+        25%{
+                border-radius: 25% 0 0 0;
+                transform: rotate(45deg);
+        }
+        50%{
+                border-radius: 25% 25% 0 0;
+                transform: rotate(90deg);
+        }
+        75%{
+                border-radius: 25% 25% 25% 0;
+                transform: rotate(135deg);
+        }
+        100%{
+                border-radius: 25% 25% 25% 25%;
+                transform: rotate(180deg);
+        }
+}
+
+@keyframes test_2 {
+        0%{
+                border-radius: 0 0 0 0;
+                transform: rotate(45deg);
+        }
+        25%{
+                border-radius: 25% 0 0 0;
+                transform: rotate(67.5deg);
+        }
+        50%{
+                border-radius: 25% 25% 0 0;
+                transform: rotate(90deg);
+        }
+        75%{
+                border-radius: 25% 25% 25% 0;
+                transform: rotate(112.5deg);
+        }
+        100%{
+                border-radius: 25% 25% 25% 25%;
+                transform: rotate(135deg);
+        }
+}
+
+div.square {
+        position: absolute;
+        margin: 100px;
+        width: 500px;
+        height: 500px;
+        /* animation: test 2s; */
+        background-color: black;
+        /* animation-fill-mode: forwards; */
+}
+div.square_2 {
+        position: relative;
+        margin: 100px;
+        width: 300px;
+        height: 300px;
+        transform: rotate(45deg);
+        /* animation: test_2 2s; */
+        /* animation-delay: 2s; */
+        background-color: white;
+        /* animation-fill-mode: forwards; */
+}
+
+div.square:hover {
+        /* position: absolute;
+        margin: 100px;
+        width: 500px;
+        height: 500px; */
+        animation: test 1s;
+        /* background-color: black; */
+        animation-fill-mode: forwards;
+}
+div.square_2:hover {
+        /* position: relative;
+        margin: 100px;
+        width: 300px;
+        height: 300px; */
+        /* transform: rotate(45deg); */
+        animation: test_2 1s;
+        /* animation-delay: 2s; */
+        background-color: white;
+        animation-fill-mode: forwards;
+}
