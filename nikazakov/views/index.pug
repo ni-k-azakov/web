@@ -1,0 +1,266 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    meta(name='description' content='БалансАвто предлагает Вам аренду строительной и коммунальной техники, в том числе услугу аренды автовышки в Санкт-Петербурге. услуги автовышки 18м. аренда автовышки 22м.Автовышка колено 30м.Вышка аренда.Подъемник аренда.Заказать автовышку.аренда автовышка СПб.Аренда агрегата.Ремонт фасадов.Монтаж рекламы.строительство ЛЭП.Дорожной спецтехники.любой срок аренды.Автовышка с опытным водителем.')
+    meta(name='keywords' content='аренда автовышки, аренда автовышки спб цена, услуги автовышки, аренда строительной техники петербург, аренда коммунальной техники, баланс авто, автовышка недорого, услуги автовышки 12м, услуги автовышки 20м, услуги автовышки 30м, услуги автовышки 35м, автовышка телескоп, вышка аренда, подъемник аренда, заказать автовышку, аренда автовышка спб, ремонт фасадов, монтаж рекламы, строительство лэп, дорожная спецтехника, любой срок аренды, автовышка с опытным водителем.')
+    // <meta rel="icon" content="../img" src="../img/logo.png">
+    link(rel='stylesheet' href='../style/animate.css')
+    script(src='../js/wow.min.js')
+    script(src='../js/jquery.js')
+    script(src='../js/js.cookie.js', type='module')
+    script(src='../js/cookieParseTime.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(type='text/javascript').
+      function m_first() {
+      document.getElementById('12m').className = 'active';
+      document.getElementById('18m').className = 'inactive';
+      document.getElementById('22m').className = 'inactive';
+      document.getElementById('30m').className = 'inactive';
+      document.getElementById('35m').className = 'inactive';
+      }
+      function m_second() {
+      document.getElementById('18m').className = 'active';
+      document.getElementById('12m').className = 'inactive';
+      document.getElementById('22m').className = 'inactive';
+      document.getElementById('30m').className = 'inactive';
+      document.getElementById('35m').className = 'inactive';
+      }
+      function m_third() {
+      document.getElementById('22m').className = 'active';
+      document.getElementById('12m').className = 'inactive';
+      document.getElementById('18m').className = 'inactive';
+      document.getElementById('30m').className = 'inactive';
+      document.getElementById('35m').className = 'inactive';
+      }
+      function m_fourth() {
+      document.getElementById('30m').className = 'active';
+      document.getElementById('12m').className = 'inactive';
+      document.getElementById('18m').className = 'inactive';
+      document.getElementById('22m').className = 'inactive';
+      document.getElementById('35m').className = 'inactive';
+      }
+      function m_fifth() {
+      document.getElementById('35m').className = 'active';
+      document.getElementById('12m').className = 'inactive';
+      document.getElementById('18m').className = 'inactive';
+      document.getElementById('22m').className = 'inactive';
+      document.getElementById('30m').className = 'inactive';
+      }
+    script.
+      new WOW().init();
+    script(type='text/javascript').
+      $(function () {
+      $(document).on('mousemove', function (e) {
+      $(document.documentElement).css({
+      backgroundPositionX: -e.pageX / 50,
+      backgroundPositionY: -e.pageY / 50
+      });
+      });
+      });
+    script(type='text/javascript').
+        $(document).ready ( function(){
+            document.getElementById('time').innerText = " Total: " + (performance.now() / 1000).toFixed(4) + " Server: " + (Cookies.get('server-time') * 1).toFixed(4);
+        });
+    script(type='text/javascript').
+        function viewLogInfo() {
+            document.getElementById('name_span').textContent = " " + document.getElementById('logLogin').value;
+            $(".log_div").hide();
+            $(".log_info_div").show();
+        }
+    link(rel='stylesheet' type='text/css' href='../style/main.css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Poiret+One&display=swap' rel='stylesheet')
+    script(src='../js/script.js' type='text/javascript')
+    title Аренда автовышки СПБ от 12 до 35 метров | Коммунальная техника от 815₽ час!
+  body
+    .black_square
+    .header_div
+      .logo
+        a(href='#' style='height: 100%;')
+          img(src='../img/logo.png' alt='' style='width: 50px; height: 50px; padding-top: 10px;')
+      .heading(style='')
+        ul.nav
+          li
+            a(href='#add')
+              br
+              | Выбор техники
+          li
+            a(href='#comp_info')
+              br
+              | О компании
+          li
+            a(href='#price')
+              br
+              | Прайс-лист
+          li
+            a(href='#price')
+              br
+              | Напишите нам
+          li
+            a(href='#map')
+              br
+              | Наш адрес
+    .main_div
+      .log_div(style='position: absolute;')
+          button#logButton(onclick="viewLogInfo()") Войти
+          input#logLogin(name='name' type='text' placeholder='Введите ваш логин')
+          input#logPassword(name='name' type='text' placeholder='Введите пароль')
+      .log_info_div(style='position: absolute; display: none;')
+        p#logInfo(style='color: white;') Вы вошли как
+          span#name_span(style='color: blue;')
+      .contacts
+        span(style='color:white')
+          | +7-905-213-96-44
+          br
+          |                         985-43-46
+          br
+          |                         balansavto@mail.ru
+      .main_name
+        | БалансАвто
+        hr#add
+      .additional
+        | -аренда строительной и коммунальной- техники в Санкт-Петербурге
+    .black_square(style='background-color: #FDF4E3')
+    .car_chooser
+      .height_choice
+        ul.choise
+          li#12m.inactive(style='border-radius: 10px 0 0 0;')
+            a(href='avto_12' target='cars' onclick='m_first();') 12 МЕТРОВ
+          li#18m.inactive
+            a(href='avto_18' target='cars' onclick='m_second();') 18 МЕТРОВ
+          li#22m.inactive
+            a(href='avto_22' target='cars' onclick='m_third();') 22 МЕТРА
+          li#30m.inactive
+            a(href='avto_30' target='cars' onclick='m_fourth();') 30 МЕТРОВ
+          li#35m.inactive(style='border-radius: 0 0 0 10px;')
+            a(href='avto_35' target='cars' onclick='m_fifth();') 35 МЕТРОВ
+      .auto_info
+        iframe(src='mem_b' width='100%' height='100%' tabindex='0' name='cars' frameborder='0' style='border-radius: 0 10px 10px 0; border: 0;' aria-hidden='false')
+    #comp_info.black_square(style='background-color: #FDF4E3')
+    .comp_info
+      .zag
+        | Аренда техники спецназначения
+      .obertka
+        hr
+        .description.wow.fadeInLeft
+          | Одним из наиболее востребованных видов сервиса на сегодня является
+          span(style='font-weight: bold') аренда автовышки
+          | : агрегата, необходимого для проведения разнообразных работ, от ремонта фасадов и монтажа наружной рекламы до устранения аварий на ЛЭП. В нашем автопарке имеются
+          span(style='font-weight: bold') автовышки различных модификаций и высоты подъема
+          | , от малометражных 12-метровых до высотной техники, позволяющей поднимать людей и грузы до 35м. Аренда возможна на любой срок:
+          span(style='font-weight: bold') от нескольких часов до нескольких месяцев и более
+          | .
+        .profile.wow.fadeInRight(data-wow-delay='0.5s')
+          | Также в профиль деятельности компании
+          span(style='font-weight: bold') «БАЛАНС АВТО»
+          |  входит:
+          ul
+            li предоставление услуг (аренда) землеройной, строительной, дорожной спецтехники
+            li выполнение отделочных и строительных работ, в том числе строительство ЛЭП
+          span(style='font-weight: bold') Преимущества аренды техники спецназначения:
+          ul
+            li
+              | заказчик оплачивает только стоимость аренды, которая
+              span(style='font-weight: bold') несравненно ниже
+              |  стоимости приобретаемой техники
+            li
+              | Вам
+              span(style='font-weight: bold') нет необходимости заботиться о техническом обслуживании
+              |  арендованных машин, содержать для этого специальное помещение и персонал
+            li
+              | услуги автовышки с опытным водителем
+              span(style='font-weight: bold') гарантируют качественное, безопасное и своевременное выполнение
+              |  необходимых работ
+        hr
+      #price.black_square
+      .some_shit
+        .prices.wow.fadeInLeft
+          table(cellpadding='15px')
+            colgroup
+              col(span='6')
+            tbody
+              tr
+                td(style='width: 160px; background: #BDBDBD; border-radius: 5px 0 0 0;') техника\оплата
+                td(style='background: #BDBDBD; width: 160px;') нал.
+                td(style='background: #BDBDBD; width: 160px; border-radius: 0 5px 0 0') б/нал. (с НДС)
+              tr
+                td(style='background: #BDBDBD;') 12 метров
+                td(style='background: rgba(255, 0, 0, 0.3);') 6500₽
+                td(style='background: rgba(255, 0, 0, 0.3);') 7000₽
+              tr
+                td(style='background: #BDBDBD;') 18 метров
+                td(style='background: rgba(255, 0, 0, 0.1);') 7000₽
+                td(style='background: rgba(255, 0, 0, 0.1);') 7500₽
+              tr
+                td(style='background: #BDBDBD;') 22 метра
+                td(style='background: rgba(255, 0, 0, 0.3);') 7500₽
+                td(style='background: rgba(255, 0, 0, 0.3);') 8000₽
+              tr
+                td(style='background: #BDBDBD;') 30 метров
+                td(style='background: rgba(255, 0, 0, 0.1);') 12000₽
+                td(style='background: rgba(255, 0, 0, 0.1);') 12500₽
+              tr
+                td(style='background: #BDBDBD; border-radius: 0 0 0 5px') 35 метров
+                td(style='background: rgba(255, 0, 0, 0.3);') 14500₽
+                td(style='background: rgba(255, 0, 0, 0.3); border-radius: 0 0 5px 0') 15000₽
+        .kek(style='width: 440px; float: right; position: relative; padding-right: 15%;')
+          form#contact-form_1.contact-form.wow.fadeIn(data-wow-delay='0.4s' data-wow-offset='50' method='POST' action='https://formspree.io/f/mdoyvyrk')
+            .zag.wow.flipInX(data-wow-delay='0.2s' style='font-size: 52px')
+              | Напишите нам
+              hr
+            p.contact-form__description
+            .contact-form__input-wrapper
+              input.contact-form__input.contact-form__input_name(name='name' type='text' placeholder='Введите ваше имя или название организации')
+              .contact-form__error.contact-form__error_name
+            .contact-form__input-wrapper
+              input.contact-form__input.contact-form__input_email(name='_replyto' type='email' placeholder='Введите ваш email / телефон')
+              .contact-form__error.contact-form__error_email
+            .contact-form__input-wrapper
+              textarea.contact-form__input.contact-form__input_question(name='message' type='question' style='height: 100px; resize: none;' placeholder='Введите ваш вопрос')
+              .contact-form__error.contact-form__error_question
+            button.contact-form__button(type='submit')  Узнать стоимость
+      #map.black_square
+    .map
+      .zag(style='border: ridge; border-width: 0 2px 0 0; border-color: white; color: white; text-align: center; margin: 0;  float: left; position: relative; font-size: 40px; width: 50vw; height: 180px; padding: 40px 0 0 0; z-index: -10;')
+        | Санкт-Петербург
+        br
+        |                         Кронверкский проспект, Д.71
+        br
+        |                         197198
+      .kek.wow.fadeIn(style='float: right; position: relative; padding:  0 15vw 0 0; margin: 0; z-index: -10;')
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.8942540787813!2d30.3043936583816!3d59.95224293851087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696313f76bded11%3A0x442e06664cd69e68!2sKronverkskiy%20Prospekt%2C%2071%2C%20Sankt-Peterburg%2C%20197198!5e0!3m2!1sen!2sru!4v1588274011355!5m2!1sen!2sru' width='400' height='220' frameborder='0' style='border:0; border-radius: 5px;' allowfullscreen='' aria-hidden='false' tabindex='0')
+    .black_square
+    .footer
+      ul.footer_nav
+        li(style='color: grey;')
+          br
+          | ООО "Баланс Авто"
+          br
+          br
+          |  2008 - 2020
+        li(style='color: grey;')
+          br
+          | Аренда строительной и коммунальной техники в Санкт-Петербурге
+        li(style='width: 22px; height: 30px;')
+          img(src='../img/phone.webp' alt='Почта' style='width: 22px; height: 30px; position: relative; float: left; padding-top: 20px;')
+        li
+          span(style='font-weight: bold;')
+            br
+            | +7-905-213-96-44
+            br
+            br
+            |  985-43-46
+        li(style='width: 30px; height: 30px;')
+          img(src='../img/dog.png' alt='Почта' style='width: 30px; height: 30px; position: relative; float: left; padding-top: 20px;')
+        li
+          br
+          br
+          span(style='font-weight: bold;') balansavto@mail.ru
+        li
+            br
+            p#time(style='color: red')
+        li
+            a(href='user_inter') Действия с юзерами

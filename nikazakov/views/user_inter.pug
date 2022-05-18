@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Poiret+One&display=swap' rel='stylesheet')
+    title БалансАвто
+    link(rel='stylesheet' type='text/css' href='../style/user.css')
+    script(type='text/javascript').
+     async function addUser() {
+         const data = {
+            firstName: document.getElementById('userName').value,
+            lastName: document.getElementById('userSurname').value
+         }
+         console.log(data)
+         const res = await fetch('/users/add_user', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+         }).then((res) => res.json()).then(
+            res => document.getElementById('userData').innerText = "Юзер добавлен. ID: " + res['identifiers'][0]["id"],
+            error => document.getElementById('userData').innerText = error.message
+         )
+     }
+     async function getUser() {
+        const id = document.getElementById('userID').value
+        const res = await fetch('/users/' + id, {
+          method: 'GET'
+        }).then(res => res.json()).then(
+          res => document.getElementById('userData').innerText = res['lastName'] + " " + res['firstName'],
+          error => document.getElementById('userData').innerText = "Нет юзера с таким ID"
+        )
+     }
+
+     async function deleteUser() {
+        const id = document.getElementById('userID').value
+        const res = await fetch('/users/' + id, {
+          method: 'DELETE'
+        }).then(res => res.json()).then(
+          res => document.getElementById('userData').innerText = "Пользователь удален",
+          error => document.getElementById('userData').innerText = error.message
+        )
+     }
+  body(style='background-color: rgb(220, 220, 220); width: 100%; height: 100%;')
+      .user_interaction_div(style='position: absolute;')
+        input#userID(name='ID' type='text' placeholder='ID юзера')
+        input#userName(name='name' type='text' placeholder='Имя юзера')
+        input#userSurname(name='surname' type='text' placeholder='Фамилия юзера')
+        p
+        button#userAdd(onclick="addUser()") Добавить юзера
+        p
+        button#userGet(onclick="getUser()") Получить юзера по ID
+        p
+        button#userDelete(onclick="deleteUser()") Удалить юзера по ID
+        p#userData ###########
